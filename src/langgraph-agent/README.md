@@ -1,5 +1,19 @@
 # Aplication Sington Patter in Agent LLM device localhost.
 
+```
+src/
+├── langgraph-agent/
+│   ├── orchestrations/
+│   │   ├── IndexedDBCheckpointer.ts  // Implementação do checkpointer personalizado
+│   │   └── mainWorkflow.ts          // Definição do StateGraph e compilação
+│   ├── agents/
+│   │   └── conversationalAgent.ts   // Lógica do agente, prompts
+│   ├── models/
+│   │   └── geminiModelLLM.ts        // Instanciação do modelo LLM
+│   └── tools/
+│       └── index.ts                 // (Inicialmente vazio ou com ferramentas simples)
+```
+
 **With**:
 - reactJS + langchainjs. Arquitetura de solução evolucional do agente local percistido em seu proprio dispositivo. 
 
